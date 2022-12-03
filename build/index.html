@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calorie Calculator</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <div class="bg-gray-800 w-full h-screen flex justify-center items-center ">
+        <div class="bg-gray-900 w-80 h-1/3 rounded-lg block">
+            <h1 class="text-white font-sans flex justify-center mt-12 text-3xl underline-offset-8 ">Calorie Calculator</h1>
+            <div class="flex justify-center">
+                <input id="age" placeholder="Age (15-80)" class="rounded mt-9 h-7 w-64 outline-none outline-offset-1 outline-blue-300" type="text">
+            </div>
+            <div class="flex justify-center">
+                <select   class="rounded h-7 w-64 outline-none outline-offset-1 outline-blue-300 m-4" name="" id="gender">
+                    <option value="0">Gender</option>
+                    <option value="1">Male</option>
+                    <option value="2">Female</option>
+                </select>
+            </div>
+            <div class="flex justify-center">
+                <input id="height" placeholder="Height" class=" rounded h-7 w-64 outline-none outline-offset-1 outline-blue-300" type="text">
+            </div>
+            <div class="flex justify-center">
+                <input id="weight" placeholder="Weight" class="rounded m-4 h-7 w-64 outline-none outline-offset-1 outline-blue-300" type="text">
+            </div>
+            <div class="flex justify-center">
+                <select class="rounded h-7 w-64 outline-none outline-offset-1 outline-blue-300" name="" id="activity">
+                    <option value="0">Activity</option>
+                    <option value="1">Little to no training</option>
+                    <option value="2">light training: 1-3 days/week</option>
+                    <option value="3">Moderate training: 4-5 days/week</option>
+                    <option value="4">Intensive training 6-7 days/week</option>
+                    <option value="5">Intensive daily training + physically demanding job</option>
+                </select>
+            </div>
+            <div class="flex justify-center m-8">
+                <button id="calculate" class=" text-white font-semibold mb-6 m-px h-8 w-44 border-white border-2 border-solid hover:bg-white hover:text-black duration-300">Calculate</button>
+                <button class=" text-white font-semibold mb-6 m-px h-8 w-20 border-solid border-2 border-red-600 hover:bg-red-600 duration-300"><a href="index.html">Clear</a></button>
+            </div>
+            <div id="result" class="text-white flex justify-center m-4"></div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
